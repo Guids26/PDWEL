@@ -12,7 +12,7 @@
 <body>
     <div id="div-central">
         <h1>Encontrar múltiplos</h1>
-        <form action="Ex2x.php" method="get">
+        <form action="Ex2x.php" method="POST">
             <label for="valor">Múltiplo de:</label>
             <input type="number" name="valor" id="n1" required>
             <label for="quantidade">Quantidade:</label>
@@ -34,9 +34,9 @@
         }
 
         //se existir os valores 1 e 2 capturados pelo GET executa mdc e mmc, e então exibe o resultado ao usuário
-        if (isset($_GET['valor']) == true && isset($_GET['quantidade']) == true) {
-            $num1 = (float) $_GET['valor'];
-            $num2 = (float) $_GET['quantidade'];
+        if (isset($_POST['valor']) == true && isset($_POST['quantidade']) == true) {
+            $num1 = (float) $_POST['valor'];
+            $num2 = (float) $_POST['quantidade'];
             multiplos($num1, $num2);
         }
         ?>
