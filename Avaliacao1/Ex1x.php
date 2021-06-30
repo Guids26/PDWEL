@@ -14,9 +14,9 @@
         <h1>Calcular MDC e MMC</h1>
         <form action="Ex1x.php" method="get">
             <label for="valor1">1° Valor</label>
-            <input type="number" name="valor1" id="n1" required>
+            <input type="number" name="valor1" min="1" id="n1" required>
             <label for="valor2">2° Valor</label>
-            <input type="number" name="valor2" id="n2" required>
+            <input type="number" name="valor2" min="1" id="n2" required>
             <button type="submit">Calcular</button>
         </form>
         <?php
